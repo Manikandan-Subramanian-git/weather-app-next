@@ -94,7 +94,7 @@ const search = async() =>{
            <Image src={assets.search} alt="Search" width={20} height={20} onClick={()=>search()}/>
          </section>
       </section>
-      {loading && <section className={styles.loading_message}>Loading</section>}
+      {loading && <section className={styles.loading_message}>Loading...</section>}
       {error && <section className={styles.error_message}>{error}</section>}
       {cityNotFound && <section className={styles.city_not_found}>City Not Found</section>}
       {!loading &&  !cityNotFound && <WeatherDetails icon={icon} temp={temp} city={city}  country={country} lat={lat} long={long} wind={wind} humidity={humidity}/>}
